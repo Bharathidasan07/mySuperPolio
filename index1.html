@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Super Polio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background: lightgray;
+            margin: 70px 200px;
+        }
+
+        #wrapper {
+            background: lightgray;
+            min-height: 100vh;
+            box-shadow: 0 0 25px black;
+            padding: 10px 40px 10px 25px;
+            border-radius: 20px;
+        }
+
+        #title {
+            font-size: 20px;
+        }
+
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navright{
+            display: flex;
+            list-style: none;
+        }
+
+        .lielm{
+            margin-left: 10px;
+            font-size: 17px;
+            
+        }
+
+        .lielm a:hover {
+            color: lightseagreen;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #manlapdiv{
+            margin: 20px 20px 20px 40px;
+        }
+
+        #manlap {
+            width: 300px;
+            mix-blend-mode: multiply;
+        }
+
+        #wai {
+            margin: 20px 40px 20px 20px;
+        }
+
+        #firsthalf{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .hello {
+            margin-bottom: 0;
+        }
+
+        #name {
+            margin-top: 12px;
+        }
+
+        .links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 2rem;
+            height: 2rem;
+            line-height: 1.3;
+            background: transparent;
+            border: .2rem solid white;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            color: var(--main-color);
+            margin: 1.5rem 1rem 1.5rem 0;
+            transition: .5s ease;
+        }
+
+        .links a:hover {
+            background: gray;
+            color: white;
+            box-shadow: 0 0 1rem gray;
+        }
+
+        
+        #secondhalf {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        #myimg {
+            width: 250px;
+            mix-blend-mode: multiply;
+            border-radius: 15px;
+        }
+
+        #right {
+            margin: 20px 40px 20px 20px;
+        }
+
+        #left {
+            margin: 20px 20px 20px 40px;
+        }
+
+        button {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 0;
+            outline: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button:hover{
+            font-weight: 500;
+            background: #000;
+            color: #fff;
+        }
+        button span{
+            display: inline-block;
+            width: 0px;
+            overflow: hidden;
+            transition: width 0.5s;
+        }
+        button:hover span{
+            width: 30px;
+        }
+
+        #thirdhalf {
+            align-content: center;
+        }
+
+        #thirdhalf h2 {
+            margin-left: 30px;
+        }
+
+        #tech {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .techimg {
+            width: 230px;
+        }
+
+        .scrolltop {
+            position: fixed;
+            bottom: 800px;
+            right: 80px;
+            width: 60px;
+            height: 60px;
+            background: #fff url(up.png);
+            border-radius: 50%;
+            background-position: center;
+            background-size: 40px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            z-index: 100000;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .scrolltop.active {
+            bottom: 60px;
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="scrolltop" onclick="scrolltotop()"></div>
+        <div id="navbar">
+            <p id="title"><b>My Super Polio</b></p>
+            <div>
+                <ul id="navright">
+                    <li class="lielm"><a href="#firsthalf">About</a></li>
+                    <li class="lielm"><a href="">Services</a></li>
+                    <li class="lielm"><a href="#thirdhalf">Skills</a></li>
+                    <li class="lielm"><a href="">Portfolio</a></li>
+                    <li class="lielm"><a href="">Experience</a></li>
+                    <li class="lielm"><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="firsthalf">
+            <div id="wai">
+                <p class="hello">Hello</p>
+                <h1 id="name">I'm Bharathidasan</h1>
+                <p class="hello">Web Developer & Mobile App Developer</p>
+                <div class="links">
+                    <a href="https://twitter.com/BBHARATHIDASAN2?s=09" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.instagram.com/_bharathidasan_/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="https://www.linkedin.com/mwlite/in/bharathidasan-b-1054a622a" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <button type="submit">Get In Touch <span>&#x27f6;</span></button>
+            </div>
+            <div id="manlapdiv">
+                <img src="manWithLaptop.jpg" alt="" id="manlap">
+            </div>
+            
+        </div>
+        <div id="secondhalf">
+            <div id="left">
+                <img src="MyImage.jpg" alt="" id="myimg">
+            </div>
+            <div id="right">
+                <h2>Hello I'm Bharathidasan</h2>
+                <p>I am Passionate about Web Design and Development. I am skilled in front-end Technologies
+                    like HTML, CSS, Javascript. I am also able to code in python and C Languages. I am a quick
+                    learner and team Worker that gets the job done. I can easily capitalize on low hanging 
+                    fruits and quickly maximize timing deliverables for real time schemas.
+                </p>
+                <pre>Age:      <b>21</b></pre>
+                <pre>Email:    <b><a href="mailto">bharathidasan9629@gmail.com</a></b></pre>
+                <pre>Phone:    <b>9344450836</b></pre>
+                <pre>Address:  <b>Hosur,Tamilnadu</b></pre>
+                <pre>Status:   <b>Available</b></pre>
+            </div>
+        </div>
+
+        <div id="thirdhalf">
+            <h2>Skills</h2>
+            <div id="tech">
+                <div><img src="html5.png" alt="" class="techimg"></div>
+                <div><img src="css3.png" alt="" class="techimg"></div>
+                <div><img src="python.png" alt="" class="techimg"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.scrolltop');
+            scroll.classList.toggle("active" , window.scrollY > 500)
+        })
+
+        function scrolltotop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            })
+        }
+    </script>
+    
+</body>
+</html>
